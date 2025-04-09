@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ### ✍️ Author
 
-Created by [Lata Venkat] — feel free to reach out for collaboration or feedback!
+Created by [Lata Venkat](https://github.com/svenkatlata/) — feel free to reach out for collaboration or feedback!
 
 ### 📄 License
 
