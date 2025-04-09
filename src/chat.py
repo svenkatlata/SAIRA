@@ -96,7 +96,7 @@ def get_chat_responses(messages):
     """Get Chat Responses from OpenAI"""
     print("🟢 Starting chat response process...")
     response = openai_client.responses.create(
-        model="gpt-4o", input=messages, tools=TOOLS, temperature=0.5, store=True
+        model="gpt-4o-mini", input=messages, tools=TOOLS, temperature=0.5, store=True
     )
     print("🤖 Response from OpenAI model received.")
 
@@ -165,7 +165,7 @@ def handle_get_research_works(tool_call, args, messages):
 
     print("🔁 Sending updated messages back to OpenAI.")
     response = openai_client.responses.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         input=messages,
         tools=TOOLS,
         temperature=0.5,
@@ -205,7 +205,7 @@ def handle_update_user_requirements(tool_call, args, messages):
 
     print("🔁 Sending updated messages back to OpenAI.")
     response = openai_client.responses.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         input=messages,
         tools=TOOLS,
         temperature=0.5,

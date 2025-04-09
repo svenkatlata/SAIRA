@@ -53,3 +53,56 @@ if prompt := st.chat_input("What can I help you with?"):
     with st.chat_message(name="assistant"):
         assistant_message = st.session_state.messages[-1]["content"]
         st.write(assistant_message)
+
+# Sidebar Title
+st.sidebar.title("📚 SAIRA – Smart AI Research Assistant")
+
+st.sidebar.markdown(
+    """
+    **SAIRA** is an AI-powered research companion designed to help you explore, discover, and ideate across the research landscape.  
+    Whether you're conducting literature reviews, exploring new research areas, or just brainstorming ideas — SAIRA is your intelligent hub for:  
+    - 🔍 Finding relevant research papers  
+    - 💡 Exploring thought experiments  
+    - 📖 Understanding existing literature  
+    - 📝 Even identifying gaps to publish your own work  
+    """
+)
+
+# Static Instructions
+st.sidebar.markdown("### 🚀 How to Use")
+st.sidebar.markdown(
+    """
+    1. **Start with a clear research topic** – something that already has active research.
+    2. **Provide specific links** (e.g., DOI URLs) if you have particular papers or queries in mind.
+    3. **Mention preferences** like sorting (e.g., by citations, date) or whether you want only open-access papers.
+    4. SAIRA will suggest **keywords** based on your intent. You can customize them if needed.
+    5. Once keywords are finalized, SAIRA will list **relevant topics** to choose from.
+    6. Select a topic, and SAIRA will fetch a curated list of research papers for you.
+    """
+)
+
+# Precautions / Limitations
+st.sidebar.markdown("### ⚠️ Please Note")
+st.sidebar.markdown(
+    """
+    - **Session-based memory only:** All chat history will be lost once you refresh the browser.
+    - **Experimental tool:** This is an early prototype, so it does not support chat saving yet.
+    - **One topic per session:** For best results, avoid switching topics in the same chat. Start fresh with a browser refresh.
+    """
+)
+
+# Developer Info
+st.sidebar.markdown("---")
+st.sidebar.markdown("👩‍💻 **Developed by:** [Lata Venkat](https://github.com/svenkatlata)")
+st.sidebar.markdown(
+    """
+    💬 Have feedback, found a bug, or just curious about the tool?  
+    Feel free to reach out — I'd love to connect!
+    """
+)
+st.sidebar.markdown("✉️ svenkatlata@gmail.com")
+
+# Footer or App Version
+st.sidebar.markdown("---")
+st.sidebar.markdown("Version: `1.0.0`")
+
