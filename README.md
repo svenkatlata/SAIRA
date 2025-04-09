@@ -5,6 +5,13 @@ This project allows users to explore academic research papers by dynamically upd
 
 ### 🤖 [App Link](https://saira-ai.streamlit.app/)
 
+### Code Execution
+
+- create virtual environment (optional)
+- pip install -r requirements
+- cd src
+- streamlit run main.py
+
 ### 🚀 Features
 
 - Search research papers using the [OpenAlex API](https://docs.openalex.org/)
