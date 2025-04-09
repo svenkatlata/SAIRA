@@ -3,9 +3,7 @@
 
 This project allows users to explore academic research papers by dynamically updating search preferences and querying the OpenAlex API. It supports keyword filtering, author/institution/topic selection, DOI validation, and time-based publication filtering.
 
-### 🤖 App Link
-
-
+### 🤖 [App Link](https://saira-ai.streamlit.app/)
 
 ### 🚀 Features
 
