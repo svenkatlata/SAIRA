@@ -7,7 +7,7 @@ from datetime import datetime
 import requests
 import pandas as pd
 
-topics_map = pd.read_csv("topics_mapping.csv")
+topics_map = pd.read_csv("../src/topics_mapping.csv")
 
 
 def get_topic_id(topic_name):

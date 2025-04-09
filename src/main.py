@@ -81,6 +81,14 @@ st.sidebar.markdown(
     """
 )
 
+st.sidebar.markdown("### 📘 Detailed Usage")
+st.sidebar.markdown(
+    """
+    For in-depth usage, examples, and advanced configurations, please refer to the  
+    👉 **[GitHub Repository: SAIRA](https://github.com/svenkatlata/SAIRA)**
+    """
+)
+
 # Precautions / Limitations
 st.sidebar.markdown("### ⚠️ Please Note")
 st.sidebar.markdown(
@@ -93,7 +101,9 @@ st.sidebar.markdown(
 
 # Developer Info
 st.sidebar.markdown("---")
-st.sidebar.markdown("👩‍💻 **Developed by:** [Lata Venkat](https://github.com/svenkatlata)")
+st.sidebar.markdown(
+    "👩‍💻 **Developed by:** [Lata Venkat](https://github.com/svenkatlata)"
+)
 st.sidebar.markdown(
     """
     💬 Have feedback, found a bug, or just curious about the tool?  
@@ -105,4 +115,3 @@ st.sidebar.markdown("✉️ svenkatlata@gmail.com")
 # Footer or App Version
 st.sidebar.markdown("---")
 st.sidebar.markdown("Version: `1.0.0`")
-
