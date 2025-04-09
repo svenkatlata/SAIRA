@@ -1,0 +1,10 @@
+numpy
+pandas
+ipykernel
+openai
+streamlit
+python-dotenv
+requests
+selenium
+webdriver_manager
+bs4
