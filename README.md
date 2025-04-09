@@ -79,14 +79,14 @@ pip install -r requirements.txt
 ### 📡 API Reference
 
 - OpenAI Responses API: https://platform.openai.com/
-- Model used: 'gpt-4o-mini'
+  - Model used: 'gpt-4o-mini'
 
 - OpenAlex API: https://api.openalex.org/
-- Sample Endpoints:
-  - Topics: `/topics/{id}`
-  - Works: `/works/{doi}`
-  - Authors: `/authors/{id}`
-  - Institutions: `/institutions/{id}`
+  - Sample Endpoints:
+    - Topics: `/topics/{id}`
+    - Works: `/works/{doi}`
+    - Authors: `/authors/{id}`
+    - Institutions: `/institutions/{id}`
 
 ### ✍️ Author
 
