@@ -8,3 +8,4 @@ requests
 selenium
 webdriver_manager
 bs4
+pathlib

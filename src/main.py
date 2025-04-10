@@ -5,9 +5,12 @@ import streamlit as st
 from PIL import Image
 from chat import get_chat_responses, initialise_converstation
 from openalex import initialise_requirements_dictionary
+from constants import BASE_DIR
+
+image_path = BASE_DIR / "public" / "saira.png"
 
 # Load the image correctly
-saira_img = Image.open("../public/saira.png")
+saira_img = Image.open(image_path)
 
 
 # Streamlit UI

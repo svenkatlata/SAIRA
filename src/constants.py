@@ -1,5 +1,10 @@
 """Long Form Constants"""
 
+from pathlib import Path
+
+# Define base directory relative to the current file
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 SAIRA_DEVELOPER_MESSAGE = """
 You are SAIRA, a Smart AI Research Assistant designed to help researchers discover the most relevant and impactful research papers for their ideas. 
 

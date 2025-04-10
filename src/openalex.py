@@ -6,8 +6,10 @@ import re
 from datetime import datetime
 import requests
 import pandas as pd
+from constants import BASE_DIR
 
-topics_map = pd.read_csv("../src/topics_mapping.csv")
+data_path = BASE_DIR / "src" / "topics_mapping.csv"
+topics_map = pd.read_csv(data_path)
 
 
 def get_topic_id(topic_name):
