@@ -17,7 +17,7 @@ saira_img = Image.open(image_path)
 st.set_page_config(
     page_title="SAIRA | Smart AI Research Assistant",
     page_icon=saira_img,
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 
@@ -31,7 +31,8 @@ with cols[1]:
 # Initiate chat history
 if "messages" not in st.session_state:
     st.session_state.messages = initialise_converstation()
-    with open("user_requirements.json", "w", encoding="utf-8") as fs:
+    dict_path = BASE_DIR / "src" / "user_requirements.json"
+    with open(dict_path, "w", encoding="utf-8") as fs:
         json.dump(initialise_requirements_dictionary(), fs)
 
 

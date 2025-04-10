@@ -95,7 +95,9 @@ def get_research_papers(keywords, sort_by, has_open_access):
     Otherwise, it fetches papers sorted and filtered based on user preferences."""
     print("🔍 Fetching research papers...")
 
-    with open("user_requirements.json", "r+", encoding="utf-8") as fs:
+    dict_path = BASE_DIR / "src" / "user_requirements.json"
+
+    with open(dict_path, "r+", encoding="utf-8") as fs:
         user_requirements = json.load(fs)
         user_requirements["keywords"] = list(
             {keyword.strip(" ,\t\n\r") for keyword in keywords.lower().split()}
@@ -330,7 +332,8 @@ def update_user_requirements(key, value):
     """
     Main function to update user requirements dictionary based on a filter key and value.
     """
-    with open("user_requirements.json", "r+", encoding="utf-8") as fs:
+    dict_path = BASE_DIR / "src" / "user_requirements.json"
+    with open(dict_path, "r+", encoding="utf-8") as fs:
         user_requirements = json.load(fs)
 
         if key not in user_requirements["filters"] and key != "doi":
